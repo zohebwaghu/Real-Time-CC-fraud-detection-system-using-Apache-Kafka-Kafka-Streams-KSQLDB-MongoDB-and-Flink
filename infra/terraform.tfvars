@@ -21,8 +21,8 @@ tags = {
 ################################################################################
 
 # Provide existing networking primitives used by MSK, EMR, and ECS.
-vpc_id           = "vpc-02db9c3fb86743ea2"
-private_subnet_ids = ["subnet-00b1f0fbdd50c0061", "subnet-07ab6b699f6df414f", "subnet-048c2a0d21b8822dd"]
+vpc_id           = "vpc-08a1ea459ac773464"
+private_subnet_ids = ["subnet-0c12f3792e4dd7da1", "subnet-013a7d18646f73b11", "subnet-0b94bc5b69e001784"]
 
 security_group_ids = {
   msk = ""
@@ -52,7 +52,11 @@ existing_kms_keys = {
   msk  = ""
 }
 
-existing_msk_cluster_arn = "" # Provide ARN to reuse an existing MSK cluster
+existing_msk_cluster_arn = ""               # Provide ARN to reuse an existing MSK cluster
+emr_existing_key_name    = ""               # Set to an existing AWS key pair name to reuse
+emr_key_pair_name        = "macbook-air-m2" # Optional override when creating a new key pair
+emr_ssh_public_key_path  = "~/.ssh/id_rsa.pub"
+emr_ssh_ingress_cidrs    = ["68.250.225.30/32"] # Your current public IP for SSH access
 
 ################################################################################
 # MSK Configuration (bare minimum compute)
