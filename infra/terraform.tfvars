@@ -21,8 +21,8 @@ tags = {
 ################################################################################
 
 # Provide existing networking primitives used by MSK, EMR, and ECS.
-vpc_id           = "vpc-08a1ea459ac773464"
-private_subnet_ids = ["subnet-0c12f3792e4dd7da1", "subnet-013a7d18646f73b11", "subnet-0b94bc5b69e001784"]
+vpc_id           = "vpc-0710891955150ef43"
+private_subnet_ids = ["subnet-0bf2924df02d4cc4f", "subnet-0578df380aa0fbd31", "subnet-0ac4cde8c54b34711"]
 
 security_group_ids = {
   msk = ""
@@ -66,6 +66,9 @@ msk_instance_type   = "kafka.t3.small" # Smallest instance type for minimal cost
 msk_broker_count    = 3                # Required minimum for multi-AZ
 msk_ebs_volume_size = 10               # Minimum EBS volume size (GB)
 msk_kafka_version   = "3.6.0"
+
+# Allow your laptop to connect to MSK (add your public IP)
+msk_client_ingress_cidrs = ["68.250.225.30/32"]
 
 ################################################################################
 # EMR Configuration
