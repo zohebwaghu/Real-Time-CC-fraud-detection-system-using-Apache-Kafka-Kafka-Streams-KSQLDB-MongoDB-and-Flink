@@ -21,8 +21,8 @@ tags = {
 ################################################################################
 
 # Provide existing networking primitives used by MSK, EMR, and ECS.
-vpc_id           = "vpc-0de2e26350c0b0be4"
-private_subnet_ids = ["subnet-08be76418452153aa", "subnet-0f832fd3c2a803251", "subnet-0ed8158cd6ada8c29"]
+vpc_id           = "vpc-0f2d2cd0ae1940418"
+private_subnet_ids = ["subnet-0cab078a6cd0cbac1", "subnet-0c1e9d75e3c4c49d6", "subnet-0916e530e8d48e95e"]
 
 security_group_ids = {
   msk = ""
