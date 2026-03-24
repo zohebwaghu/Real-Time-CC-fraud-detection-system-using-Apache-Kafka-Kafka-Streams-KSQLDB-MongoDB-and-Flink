@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+
+# Submission / report files
+submission.md
+build_submission.py
+Group09_HW3.docx
+Group09_HW3_Zoheb Waghu.pdf
+Group09_HW2.pdf
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Screenshots folder (add images manually if needed)
+screenshots/
+
+# macOS
+.DS_Store
