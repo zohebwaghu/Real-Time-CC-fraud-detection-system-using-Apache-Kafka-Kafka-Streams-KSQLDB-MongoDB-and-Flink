@@ -1,4 +1,4 @@
-# DATA 228 — Homework 3: Real-Time Credit Card Fraud Detection
+# Real-Time Credit Card Fraud Detection
 
 **Stack:** Kafka · KSQLDB · MongoDB · Flink  
 **Points:** 40 total
